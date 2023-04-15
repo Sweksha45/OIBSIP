@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylswe.css">
+    <script src="https://kit.fontawesome.com/24604e28e4.js" crossorigin="anonymous"></script>
+    <
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hello,<br>I'm <span>Sweksha Shrivastava</span></br></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------about---------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="sweimg.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p>I am a highly motivated 2nd year student pursuing a B.Tech in Biotechnology with a minor degree in Data Science at NIET. As the president of NIET E CELL, I have gained valuable leadership skills and experience in organizing various events and workshops for students.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certifications</p>
+                    </div>
+             
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>5 stars on Hackerrank.</br></li>
+                            <li><span>Data Science</span><br>Intermediate.</br></li>
+                            <li><span>Web Development</span><br>Beginner.</br></li>
+                            <li><span>SQL</span><br>Beginner.</br></li>
+                            <li><span>R</span><br>Beginner.</br></li>
+                            <li><span>President</span><br>At NIET, E-Cell</br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>B.Tech from Noida Institute Of Engineering And Technology, Greater Noida.</br></li>
+                            <li><span>2020</span><br>12th from Gaya College, Gaya, Bihar.</br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                    	<ul>
+                    		<li><span><a href="https://www.coursera.org/account/accomplishments/verify/YEG4WWY7JRKF" target="_blank">Genes and the Human Condition (From Behavior to Biotechnology)</a></span></li>
+                    		<li><br><span><a href="https://www.coursera.org/account/accomplishments/verify/PQUXPT7YF2QQ" class="clickme danger" target="_blank">Introduction to Genetics and Evolution
+                             Data</a></span></br></li>
+                             <li><br><span><a href="https://coursera.org/share/7dbc72b6cee0a69bfa7d7fe255eeb138" class="clickme danger" target="_blank">Python Basics</a></span></br></li>
+                             <li><br><span><a href="https://www.coursera.org/account/accomplishments/verify/8CN6NGPFXQWH" class="clickme danger" target="_blank">Fundamentals of Immunology: T Cells and Signaling</a></span></br></li>
+                             <li><br><span><a href="https://www.coursera.org/account/accomplishments/verify/YSBGYF2W6MED" class="clickme danger" target="_blank">Introduction to Artificial Intelligence (AI)</a></span></br></li>
+                             <li><br><span><a href="https://www.coursera.org/account/accomplishments/verify/3MRV5X2J9JK8" class="clickme danger" target="_blank">Human-Centered Design for Inclusive Innovation</a></span></br></li>
+                             <li><br><span><a href="https://www.coursera.org/account/accomplishments/verify/JCVQSWM54U6Y" class="clickme danger" target="_blank">Bioinformatic Methods I</a></span></br></li>
+                             <li><br><span><a href="https://www.coursera.org/account/accomplishments/verify/4ZA9KUJUYMHM" class="clickme danger" target="_blank">Genomics: Decoding the Universal Language of Life</a></span></br></li>
+                             <li><br><span><a href="https://www.hackerrank.com/certificates/e0dde0dad97e" class="clickme danger" target="_blank">Python basics Hackerrank</a></span></br></li>
+                    	</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------contact------------------->
+    <div id="contact">
+    	<div class="container">
+    		<div class="row">
+    			<div class="contact-left">
+    				<h1 class="sub-title">Contact Information</h1>
+    				<p><br><i class="fa-sharp fa-solid fa-paper-plane fa-beat-fade"></i>    shrivastavasweksha517@gmail.com</br></p>
+    				<p><br><i class="fa-solid fa-square-phone fa-beat-fade"></i>    +91 8809548945</br></p>
+    				<div class="social-icons">
+    					<br><a href="https://www.linkedin.com/in/sweksha-shrivastava-7868b8225"><i class="fa-brands fa-linkedin fa-bounce"></i></a></br>
+    				</div>
+    				<a href="Resume_sweksha.pdf" download class="btn">Download Resume</a>
+    			</div>
+    			
+    		</div>
+    		
+    	</div>
+    	<div class="info">
+    		<p>Oasis Infobyte Internship</p>
+    	</div>
+    </div>
+
+
+<script>
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+
+
+</body>
+</html>
